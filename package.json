@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-3-electron-template",
+  "version": "1.0.0",
+  "author": "Edward Cross",
+  "description": "Template app for running Nuxt 3 and Electron with server side rendering",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "build": "nuxt build && electron-builder",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate && electron-builder",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "nuxt": "^3.8.2",
+    "nuxt-electron": "^0.7.0",
+    "vite-plugin-electron": "^0.15.5",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  }
+}
